@@ -67,6 +67,10 @@ importers:
       yaml-eslint-parser:
         specifier: ^1.2.2
         version: 1.2.2
+    devDependencies:
+      eslint:
+        specifier: ^8.49.0
+        version: 8.49.0
 
   packages/eslint-config-basic:
     dependencies:
