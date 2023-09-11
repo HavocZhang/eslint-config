@@ -1,7 +1,10 @@
 {
   "name": "eslint-plugin-havoczhang",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "files": [
@@ -21,8 +24,5 @@
     "@typescript-eslint/rule-tester": "^6.4.1",
     "unbuild": "^2.0.0",
     "vitest": "^0.34.2"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

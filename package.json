@@ -1,8 +1,11 @@
 {
   "name": "@havoczhang/eslint-config-monorepo",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
   "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "scripts": {
     "lint": "pnpm -r run stub && eslint .",
     "test": "pnpm -r run test",
@@ -10,9 +13,6 @@
     "prepare": "pnpm -r run stub",
     "release": "bumpp -r && pnpm -r publish"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@havoczhang/eslint-config": "workspace:*",
     "bumpp": "^9.2.0",

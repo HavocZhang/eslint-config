@@ -1,14 +1,14 @@
 {
   "name": "@havoczhang/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "files": [
     "index.js"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@havoczhang/eslint-config-vue": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
