@@ -1,13 +1,13 @@
 const fs = require('node:fs')
 const { join } = require('node:path')
 const process = require('node:process')
-const basic = require('@havoczhang/eslint-config-basic')
+const basic = require('@havoc_zhang/eslint-config-basic')
 
 const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = {
   extends: [
-    '@havoczhang/eslint-config-basic',
+    '@havoc_zhang/eslint-config-basic',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -156,12 +156,12 @@ module.exports = {
     'lines-between-class-members': 'off',
     '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
-    // havoczhang
-    'havoczhang/generic-spacing': 'error',
-    'havoczhang/no-cjs-exports': 'error',
-    'havoczhang/no-ts-export-equal': 'error',
-    'havoczhang/no-const-enum': 'error',
-    'havoczhang/named-tuple-spacing': 'error',
+    // havoc_zhang
+    'havoc_zhang/generic-spacing': 'error',
+    'havoc_zhang/no-cjs-exports': 'error',
+    'havoc_zhang/no-ts-export-equal': 'error',
+    'havoc_zhang/no-const-enum': 'error',
+    'havoc_zhang/named-tuple-spacing': 'error',
 
     // off
     '@typescript-eslint/consistent-indexed-object-style': 'off',

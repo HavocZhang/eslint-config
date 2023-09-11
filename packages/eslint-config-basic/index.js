@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'havoczhang',
+    'havoc_zhang',
     'no-only-tests',
     'unused-imports',
   ],
@@ -215,8 +215,8 @@ module.exports = {
         'no-undef': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
-        'havoczhang/no-cjs-exports': 'off',
-        'havoczhang/no-ts-export-equal': 'off',
+        'havoc_zhang/no-cjs-exports': 'off',
+        'havoc_zhang/no-ts-export-equal': 'off',
         'n/prefer-global/process': 'off',
       },
     },
@@ -407,11 +407,11 @@ module.exports = {
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
 
-    // havoczhang
-    'havoczhang/no-import-node-modules-by-path': 'error',
-    'havoczhang/if-newline': 'error',
-    'havoczhang/import-dedupe': 'error',
-    'havoczhang/top-level-function': 'error',
-    // 'havoczhang/prefer-inline-type-import': 'error',
+    // havoc_zhang
+    'havoc_zhang/no-import-node-modules-by-path': 'error',
+    'havoc_zhang/if-newline': 'error',
+    'havoc_zhang/import-dedupe': 'error',
+    'havoc_zhang/top-level-function': 'error',
+    // 'havoc_zhang/prefer-inline-type-import': 'error',
   },
 }
