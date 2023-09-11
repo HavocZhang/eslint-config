@@ -1,6 +1,6 @@
 {
   "name": "@havoczhang/eslint-config-ts",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -9,6 +9,9 @@
   "files": [
     "index.js"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@havoczhang/eslint-config-basic": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
