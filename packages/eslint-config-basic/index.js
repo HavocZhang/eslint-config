@@ -1,5 +1,5 @@
-const isInEditor
-  = (process.env.VSCODE_PID || process.env.JETBRAINS_IDE) && !process.env.CI
+// eslint-disable-next-line n/prefer-global/process
+const isInEditor = (process.env.VSCODE_PID || process.env.JETBRAINS_IDE) && !process.env.CI
 const offInEditor = isInEditor ? 'off' : 'error'
 
 module.exports = {
@@ -49,7 +49,13 @@ module.exports = {
     // force exclude
     '**/.vitepress/cache',
   ],
-  plugins: ['html', 'unicorn', 'havoczhang', 'no-only-tests', 'unused-imports'],
+  plugins: [
+    'html',
+    'unicorn',
+    'havoczhang',
+    'no-only-tests',
+    'unused-imports',
+  ],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
@@ -64,20 +70,11 @@ module.exports = {
         'jsonc/comma-dangle': ['error', 'never'],
         'jsonc/comma-style': ['error', 'last'],
         'jsonc/indent': ['error', 2],
-        'jsonc/key-spacing': [
-          'error',
-          { beforeColon: false, afterColon: true },
-        ],
+        'jsonc/key-spacing': ['error', { beforeColon: false, afterColon: true }],
         'jsonc/no-octal-escape': 'error',
-        'jsonc/object-curly-newline': [
-          'error',
-          { multiline: true, consistent: true },
-        ],
+        'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
         'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': [
-          'error',
-          { allowMultiplePropertiesPerLine: true },
-        ],
+        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
       },
     },
     {
@@ -155,7 +152,12 @@ module.exports = {
           },
           {
             pathPattern: '^exports.*$',
-            order: ['types', 'import', 'require', 'default'],
+            order: [
+              'types',
+              'import',
+              'require',
+              'default',
+            ],
           },
         ],
       },
@@ -226,10 +228,7 @@ module.exports = {
     'import/no-mutable-exports': 'error',
     'import/no-unresolved': 'off',
     'import/no-absolute-path': 'off',
-    'import/newline-after-import': [
-      'error',
-      { count: 1, considerComments: true },
-    ],
+    'import/newline-after-import': ['error', { count: 1, considerComments: true }],
     'import/no-self-import': 'error',
 
     // Common
@@ -241,12 +240,7 @@ module.exports = {
     'unused-imports/no-unused-imports': offInEditor,
     'unused-imports/no-unused-vars': [
       'warn',
-      {
-        vars: 'all',
-        varsIgnorePattern: '^_',
-        args: 'after-used',
-        argsIgnorePattern: '^_',
-      },
+      { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
     ],
 
     'no-param-reassign': 'off',
@@ -263,11 +257,7 @@ module.exports = {
     'no-cond-assign': ['error', 'always'],
     'func-call-spacing': 'off',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
-    'indent': [
-      'error',
-      2,
-      { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 },
-    ],
+    'indent': ['error', 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
     'no-restricted-syntax': [
       'error',
       'DebuggerStatement',
@@ -291,27 +281,11 @@ module.exports = {
     ],
     'no-restricted-properties': [
       'error',
-      {
-        property: '__proto__',
-        message:
-          'Use `Object.getPrototypeOf` or `Object.setPrototypeOf` instead.',
-      },
-      {
-        property: '__defineGetter__',
-        message: 'Use `Object.defineProperty` instead.',
-      },
-      {
-        property: '__defineSetter__',
-        message: 'Use `Object.defineProperty` instead.',
-      },
-      {
-        property: '__lookupGetter__',
-        message: 'Use `Object.getOwnPropertyDescriptor` instead.',
-      },
-      {
-        property: '__lookupSetter__',
-        message: 'Use `Object.getOwnPropertyDescriptor` instead.',
-      },
+      { property: '__proto__', message: 'Use `Object.getPrototypeOf` or `Object.setPrototypeOf` instead.' },
+      { property: '__defineGetter__', message: 'Use `Object.defineProperty` instead.' },
+      { property: '__defineSetter__', message: 'Use `Object.defineProperty` instead.' },
+      { property: '__lookupGetter__', message: 'Use `Object.getOwnPropertyDescriptor` instead.' },
+      { property: '__lookupSetter__', message: 'Use `Object.getOwnPropertyDescriptor` instead.' },
     ],
 
     // es6
@@ -345,21 +319,17 @@ module.exports = {
     'template-curly-spacing': 'error',
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'generator-star-spacing': 'off',
-    'spaced-comment': [
-      'error',
-      'always',
-      {
-        line: {
-          markers: ['/'],
-          exceptions: ['/', '#'],
-        },
-        block: {
-          markers: ['!'],
-          exceptions: ['*'],
-          balanced: true,
-        },
+    'spaced-comment': ['error', 'always', {
+      line: {
+        markers: ['/'],
+        exceptions: ['/', '#'],
       },
-    ],
+      block: {
+        markers: ['!'],
+        exceptions: ['*'],
+        balanced: true,
+      },
+    }],
 
     // best-practice
     'array-callback-return': 'error',
@@ -416,10 +386,7 @@ module.exports = {
     // Ban `new Array` as `Array` constructor's params are ambiguous
     'unicorn/no-new-array': 'error',
 
-    'no-use-before-define': [
-      'error',
-      { functions: false, classes: false, variables: true },
-    ],
+    'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
     'eslint-comments/disable-enable-pair': 'off',
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'off',
