@@ -14,7 +14,7 @@ importers:
         specifier: ^8.49.0
         version: 8.49.0
       eslint-plugin-havoc_zhang:
-        specifier: link:./packages/eslint-plugin-havoc_zhang
+        specifier: workspace:*
         version: link:packages/eslint-plugin-havoc_zhang
       rimraf:
         specifier: ^5.0.1
@@ -79,7 +79,7 @@ importers:
         version: 3.2.0(eslint@8.49.0)
       eslint-plugin-havoc_zhang:
         specifier: workspace:*
-        version: link:../eslint-plugin-havoczhang
+        version: link:../eslint-plugin-havoc_zhang
       eslint-plugin-html:
         specifier: ^7.1.0
         version: 7.1.0
@@ -159,7 +159,7 @@ importers:
         specifier: ^8.49.0
         version: 8.49.0
 
-  packages/eslint-plugin-havoczhang:
+  packages/eslint-plugin-havoc_zhang:
     dependencies:
       '@typescript-eslint/utils':
         specifier: ^6.4.1
