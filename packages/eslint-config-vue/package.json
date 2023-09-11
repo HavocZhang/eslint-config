@@ -1,6 +1,6 @@
 {
-  "name": "@havoczhang/eslint-config-vue",
-  "version": "0.1.4",
+  "name": "@havoc_zhang/eslint-config-vue",
+  "version": "0.1.5",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -9,12 +9,9 @@
   "files": [
     "index.js"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
-    "@havoczhang/eslint-config-basic": "workspace:*",
-    "@havoczhang/eslint-config-ts": "workspace:*",
+    "@havoc_zhang/eslint-config-basic": "workspace:*",
+    "@havoc_zhang/eslint-config-ts": "workspace:*",
     "eslint-plugin-vue": "^9.17.0",
     "local-pkg": "^0.4.3"
   },

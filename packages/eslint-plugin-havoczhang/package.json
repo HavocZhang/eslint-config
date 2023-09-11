@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-havoczhang",
-  "version": "0.1.4",
+  "name": "eslint-plugin-havoc_zhang",
+  "version": "0.1.5",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -15,9 +15,6 @@
     "stub": "unbuild --stub",
     "test": "vitest",
     "prepublishOnly": "nr build"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "dependencies": {
     "@typescript-eslint/utils": "^6.4.1"

@@ -1,6 +1,6 @@
 {
-  "name": "@havoczhang/eslint-config-monorepo",
-  "version": "0.1.4",
+  "name": "@havoc_zhang/eslint-config-monorepo",
+  "version": "0.1.5",
   "private": true,
   "description": "",
   "author": "",
@@ -8,16 +8,17 @@
   "keywords": [],
   "scripts": {
     "lint": "pnpm -r run stub && eslint .",
+    "lint:fix": "pnpm -r run stub && eslint . --fix",
     "test": "pnpm -r run test",
     "build": "pnpm -r run build",
     "prepare": "pnpm -r run stub",
-    "release": "bumpp -r && pnpm -r publish"
+    "release": "bumpp -r && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@havoczhang/eslint-config": "workspace:*",
+    "@havoc_zhang/eslint-config": "workspace:*",
     "bumpp": "^9.2.0",
     "eslint": "^8.49.0",
-    "eslint-plugin-havoczhang": "link:./packages/eslint-plugin-havoczhang",
+    "eslint-plugin-havoc_zhang": "link:./packages/eslint-plugin-havoc_zhang",
     "rimraf": "^5.0.1",
     "typescript": "^5.2.2"
   }
