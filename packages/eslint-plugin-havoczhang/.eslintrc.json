@@ -1,6 +1,6 @@
 {
-    "extends": "@havoczhang",
-    "plugins": [
-      "havoczhang"
-    ]
-  }
+  "extends": "@havoczhang",
+  "plugins": [
+    "havoczhang"
+  ]
+}
