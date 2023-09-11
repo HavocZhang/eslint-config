@@ -1,6 +1,6 @@
 {
   "name": "@havoc_zhang/eslint-config-monorepo",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "description": "",
   "author": "",
@@ -18,7 +18,7 @@
     "@havoc_zhang/eslint-config": "workspace:*",
     "bumpp": "^9.2.0",
     "eslint": "^8.49.0",
-    "eslint-plugin-havoc_zhang": "link:./packages/eslint-plugin-havoc_zhang",
+    "eslint-plugin-havoc_zhang": "workspace:*",
     "rimraf": "^5.0.1",
     "typescript": "^5.2.2"
   }
